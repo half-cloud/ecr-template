@@ -1,0 +1,29 @@
+{
+    "emitLegacyScripts": false,
+    "name": "ECR Template (sourcemap)",
+    "serveAddress": "10.0.0.152",
+    "tree": {
+        "$className": "DataModel",
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "Client": {
+                "$path": "src/client"
+            },
+            "Packages": {
+                "$path": "Packages"
+            },
+            "Shared": {
+                "$path": "src/shared"
+            }
+        },
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "Packages": {
+                "$path": "ServerPackages"
+            },
+            "Server": {
+                "$path": "src/server"
+            }
+        }
+    }
+}

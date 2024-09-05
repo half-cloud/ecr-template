@@ -1,0 +1,1 @@
+rojo sourcemap --watch -o sourcemap.json sourcemap.project.json & darklua process -w src/ out/

@@ -1,0 +1,21 @@
+{
+    "rules": [
+        {
+            "rule": "convert_require",
+            "current": {
+                "name": "path",
+                "sources": {
+                    "@client": "./src/client",
+                    "@packages": "./Packages",
+                    "@server-packages": "./ServerPackages",
+                    "@server": "./src/server",
+                    "@shared": "./src/shared"
+                }
+            },
+            "target": {
+                "name": "roblox",
+                "rojo_sourcemap": "./sourcemap.json"
+            }
+        }
+    ]
+}

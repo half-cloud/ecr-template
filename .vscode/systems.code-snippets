@@ -1,0 +1,130 @@
+{
+    "client_system": {
+        "description": "Sets up a client side system",
+        "prefix": "cs",
+        "body": [
+            "local client_state = require(\"@client/utils/client_state\")",
+            "local cts = require(\"@shared/cts\")",
+            "local std = require(\"@shared/std\")",
+            "",
+            "type ClientState = client_state.ClientState",
+            "type System<T> = std.System<T>",
+            "",
+            "local exports: System<ClientState> = {",
+            "\tsystem = function(registry)",
+            "\t\t$1",
+            "\tend",
+            "}",
+            "",
+            "return exports"
+        ]
+    },
+    "client_once_system": {
+        "description": "Sets up a client side system that's ran once",
+        "prefix": "cos",
+        "body": [
+            "local client_state = require(\"@client/utils/client_state\")",
+            "local cts = require(\"@shared/cts\")",
+            "local std = require(\"@shared/std\")",
+            "",
+            "type ClientState = client_state.ClientState",
+            "type System<T> = std.System<T>",
+            "",
+            "local exports: System<ClientState> = {",
+            "\trun_once = true,",
+            "\tsystem = function(registry)",
+            "\t\t$1",
+            "\tend",
+            "}",
+            "",
+            "return exports"
+        ]
+    },
+    "client_stateful_system": {
+        "description": "Sets up a client side system that's stateful",
+        "prefix": "css",
+        "body": [
+            "local client_state = require(\"@client/utils/client_state\")",
+            "local cts = require(\"@shared/cts\")",
+            "local std = require(\"@shared/std\")",
+            "",
+            "type ClientState = client_state.ClientState",
+            "type System<T> = std.System<T>",
+            "",
+            "local exports: System<ClientState> = {",
+            "\tstateful = true,",
+            "\tsystem = function(registry)",
+            "\t\treturn function()",
+            "\t\t\t$1",
+            "\t\tend",
+            "\tend",
+            "}",
+            "",
+            "return exports"
+        ]
+    },
+    "server_system": {
+        "description": "Sets up a server side system",
+        "prefix": "ss",
+        "body": [
+            "local cts = require(\"@shared/cts\")",
+            "local server_state = require(\"@server/utils/server_state\")",
+            "local std = require(\"@shared/std\")",
+            "",
+            "type ServerState = server_state.ServerState",
+            "type System<T> = std.System<T>",
+            "",
+            "local exports: System<ServerState> = {",
+            "\tsystem = function(registry)",
+            "\t\t$1",
+            "\tend",
+            "}",
+            "",
+            "return exports"
+        ]
+    },
+    "server_once_system": {
+        "description": "Sets up a server side system that's ran once",
+        "prefix": "sos",
+        "body": [
+            "local cts = require(\"@shared/cts\")",
+            "local server_state = require(\"@server/utils/server_state\")",
+            "local std = require(\"@shared/std\")",
+            "",
+            "type ServerState = server_state.ServerState",
+            "type System<T> = std.System<T>",
+            "",
+            "local exports: System<ServerState> = {",
+            "\trun_once = true,",
+            "\tsystem = function(registry)",
+            "\t\t$1",
+            "\tend",
+            "}",
+            "",
+            "return exports"
+        ]
+    },
+    "server_stateful_system": {
+        "description": "Sets up a server side system that's stateful",
+        "prefix": "sss",
+        "body": [
+            "local cts = require(\"@shared/cts\")",
+            "local server_state = require(\"@server/utils/server_state\")",
+            "local std = require(\"@shared/std\")",
+            "",
+            "type ServerState = server_state.ServerState",
+            "type System<T> = std.System<T>",
+            "",
+            "local exports: System<ServerState> = {",
+            "\tstateful = true,",
+            "\tsystem = function(registry)",
+            "\t\treturn function()",
+            "\t\t\t$1",
+            "\t\tend",
+            "\tend",
+            "}",
+            "",
+            "return exports"
+        ]
+    }
+}

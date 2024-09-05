@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "luau-lsp.platform.type": "roblox",
+  "luau-lsp.require.mode": "relativeToFile",
+  "luau-lsp.sourcemap.rojoPath": "sourcemap.project.json",
+  "luau-lsp.sourcemap.autogenerate": true,
+  "luau-lsp.require.directoryAliases": {
+    "@client": "./src/client",
+    "@lune/": "~/.lune/.typedefs/0.8.8/",
+    "@packages": "./Packages",
+    "@server-packages": "./ServerPackages",
+    "@server": "./src/server",
+    "@shared": "./src/shared"
+  },
+}
