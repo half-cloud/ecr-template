@@ -4,6 +4,8 @@ local snapshots = require("./snapshots")
 local types = require("./types")
 
 export type Snapshot = types.Snapshot
+export type SnapshotDeserializeOptions = types.SnapshotDeserializeOptions
+export type SnapshotSerializeOptions = types.SnapshotSerializeOptions
 export type System<T> = types.System<T>
 
 local exports = {}
