@@ -5,6 +5,7 @@
         "body": [
             "local client_state = require(\"@client/utils/client_state\")",
             "local cts = require(\"@shared/cts\")",
+            "local ecr = require(\"@packages/ecr\")",
             "local std = require(\"@shared/std\")",
             "",
             "type ClientState = client_state.ClientState",
@@ -25,6 +26,7 @@
         "body": [
             "local client_state = require(\"@client/utils/client_state\")",
             "local cts = require(\"@shared/cts\")",
+            "local ecr = require(\"@packages/ecr\")",
             "local std = require(\"@shared/std\")",
             "",
             "type ClientState = client_state.ClientState",
@@ -46,6 +48,7 @@
         "body": [
             "local client_state = require(\"@client/utils/client_state\")",
             "local cts = require(\"@shared/cts\")",
+            "local ecr = require(\"@packages/ecr\")",
             "local std = require(\"@shared/std\")",
             "",
             "type ClientState = client_state.ClientState",
@@ -68,6 +71,7 @@
         "prefix": "ss",
         "body": [
             "local cts = require(\"@shared/cts\")",
+            "local ecr = require(\"@packages/ecr\")",
             "local server_state = require(\"@server/utils/server_state\")",
             "local std = require(\"@shared/std\")",
             "",
@@ -88,6 +92,7 @@
         "prefix": "sos",
         "body": [
             "local cts = require(\"@shared/cts\")",
+            "local ecr = require(\"@packages/ecr\")",
             "local server_state = require(\"@server/utils/server_state\")",
             "local std = require(\"@shared/std\")",
             "",
@@ -109,6 +114,7 @@
         "prefix": "sss",
         "body": [
             "local cts = require(\"@shared/cts\")",
+            "local ecr = require(\"@packages/ecr\")",
             "local server_state = require(\"@server/utils/server_state\")",
             "local std = require(\"@shared/std\")",
             "",
