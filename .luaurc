@@ -1,3 +1,10 @@
 {
+    "aliases": {
+        "client": "./src/client",
+        "packages": "./Packages",
+        "server-packages": "./ServerPackages",
+        "server": "./src/server",
+        "shared": "./src/shared"
+    },
     "languageMode": "strict"
 }
