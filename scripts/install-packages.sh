@@ -1,4 +1,4 @@
-aftman install
+rokit install
 
 rm -rf Packages/
 rm -rf ServerPackages/
