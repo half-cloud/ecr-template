@@ -1,3 +1,4 @@
+local bt = require("./bt")
 local create_registry = require("./create_registry")
 local create_scheduler = require("./create_scheduler")
 local find = require("./find")
@@ -13,13 +14,15 @@ export type System<T> = types.System<T>
 
 local exports = {}
 
+exports.bt = bt
 exports.create_diff_generator = snapshots.create_diff_generator
 exports.create_registry = create_registry
 exports.create_scheduler = create_scheduler
+exports.create_snapshot = snapshots.create_snapshot
 exports.find = find
 exports.insert = insert
-exports.remove = remove
-exports.create_snapshot = snapshots.create_snapshot
 exports.load_snapshot = snapshots.load_snapshot
+exports.registry = create_registry()
+exports.remove = remove
 
 return exports
