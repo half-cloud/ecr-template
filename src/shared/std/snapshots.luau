@@ -70,9 +70,14 @@ function exports.create_diff_generator(
 
 		local copts = options[cname]
 		local replicate_add_only = copts and copts.replicate_add_only
+		local ignore_changes_if = copts and copts.ignore_changes_if
 
 		if replicate_add_only ~= true then
 			registry:on_change(ctype):connect(function(id, value)
+				if ignore_changes_if ~= nil and ignore_changes_if(world, id) == true then
+					return
+				end
+
 				map[id] = value
 			end)
 
@@ -139,7 +144,7 @@ function exports.create_diff_generator(
 			snapshot.destroyed = ecr.array_to_buffer(destroyed_ids, destroyed_n)
 		end
 
-		return if snapshot.destroyed ~= nil and next(snapshot.ctypes) ~= nil then snapshot else nil
+		return if snapshot.destroyed ~= nil or next(snapshot.ctypes) ~= nil then snapshot else nil
 	end
 end
 

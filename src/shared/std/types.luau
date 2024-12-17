@@ -9,7 +9,7 @@ export type SnapshotDeserializeOptions = {
 }
 
 export type SnapshotSerializeOptions = {
-	ignore_changes_if: ((id: number) -> boolean)?,
+	ignore_changes_if: ((registry: Registry, id: number) -> boolean)?,
 	replicate_add_only: boolean?,
 	serialize: ((value: unknown) -> unknown)?,
 }
