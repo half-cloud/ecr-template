@@ -74,7 +74,7 @@ function exports.create_diff_generator(
 
 		if replicate_add_only ~= true then
 			registry:on_change(ctype):connect(function(id, value)
-				if ignore_changes_if ~= nil and ignore_changes_if(world, id) == true then
+				if ignore_changes_if ~= nil and ignore_changes_if(registry, id) == true then
 					return
 				end
 
