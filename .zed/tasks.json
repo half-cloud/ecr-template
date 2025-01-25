@@ -1,0 +1,21 @@
+[
+	{
+		"label": "install",
+		"command": "sh scripts/install-packages.sh"
+	},
+
+	{
+		"label": "process",
+		"command": "sh scripts/process-src.sh"
+	},
+
+	{
+		"label": "remotes",
+		"command": "zap remotes.zap"
+	},
+
+	{
+		"label": "rojo",
+		"command": "rojo serve"
+	}
+]
