@@ -8,5 +8,8 @@ realm = "shared"
 ecr = "centau/ecr@0.9.0"
 t = "osyrisrblx/t@3.1.1"
 
+[place]
+shared-packages = "game.ReplicatedStorage.Packages"
+
 [server-dependencies]
-lapis = "nezuo/lapis@0.3.3"
+skilift = "alicesaidhi/skilift@0.3.0"
