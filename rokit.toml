@@ -4,12 +4,12 @@
 # New tools can be added by running `rokit add <tool>` in a terminal.
 
 [tools]
-darklua = "seaofvoices/darklua@0.15.0"
-luau-lsp = "johnnymorganz/luau-lsp@1.38.1"
+darklua = "seaofvoices/darklua@0.16.0"
+luau-lsp = "johnnymorganz/luau-lsp@1.42.0"
 rojo = "rojo-rbx/rojo@7.4.4"
 selene = "kampfkarren/selene@0.28.0"
 stylua = "johnnymorganz/stylua@2.0.2"
 tarmac = "rojo-rbx/tarmac@0.7.5"
 wally = "upliftgames/wally@0.3.2"
 wally-package-types = "johnnymorganz/wally-package-types@1.4.2"
-zap = "red-blox/zap@0.6.16"
+zap = "red-blox/zap@0.6.19"
